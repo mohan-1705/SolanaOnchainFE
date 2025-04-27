@@ -11,6 +11,7 @@ import { HashLoader } from "react-spinners";
 import { IoCloseSharp } from "react-icons/io5";
 import { toast } from "sonner";
 import ChainCard from "../../utils/ChainCard";
+import backendUrl from "../../utils/common";
 
 export default function SummaryModal({
   isOpen,
@@ -27,8 +28,7 @@ export default function SummaryModal({
     try {
       toast.info("Generating summary...");
       const response = await fetch(
-        `https://onchainanalysis.vercel.app/api/evmchain/transactions/${walletAddress}`
-        // `http://localhost:8000/api/evmchain/transactions/${walletAddress}`
+        `${backendUrl}/api/evmchain/transactions/${walletAddress}`
       );
       const data = await response.json();
       console.log("Data: ", data);

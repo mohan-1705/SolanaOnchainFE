@@ -12,7 +12,7 @@ export default function TokenHolder() {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/solana/top-holders?mint=${mint}`)
+    fetch(`${backendUrl}/api/sol /top-holders?mint=${mint}`)
       .then(res => res.json())
       .then(data => {
         console.log('Fetched holders:', data.data);

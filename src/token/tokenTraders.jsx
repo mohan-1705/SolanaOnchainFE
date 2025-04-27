@@ -19,7 +19,7 @@ const TokenTraders = () => {
     const fetchGraphData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`http://localhost:8000/api/solana/token-traders?mint=${mint}`);
+        const response = await axios.get(`${backendUrl}/api/sol/token-traders?mint=${mint}`);
         
         const processedData = {
           ...response.data,

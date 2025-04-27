@@ -16,6 +16,8 @@ import {
   BsArrowDownCircle,
   BsArrowUpCircle,
 } from "react-icons/bs";
+import backendUrl from "../../utils/common";
+
 
 const tabs = [
   { id: 1, name: "Overview", icon: <IoWalletOutline /> },
@@ -53,8 +55,7 @@ const Modal = ({ props }) => {
     if (data?.id) {
       try {
         const response = await fetch(
-          // `http://localhost:8000/api/crypto/${walletAddress}/${selectedChain}`
-          `https://onchainanalysis.vercel.app/api/crypto/${walletAddress}/${selectedChain}`
+          `${process.env.VITE_BACKEND_URL}/api/crypto/${walletAddress}/${selectedChain}`
         );
         const details = await response.json();
         console.log(details);
