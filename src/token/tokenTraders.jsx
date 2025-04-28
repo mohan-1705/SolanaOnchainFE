@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Graph from "react-graph-vis";
 import axios from "axios";
+import backendUrl from "../utils/common";
 
 // Import CSS for react-graph-vis
 import "vis-network/dist/dist/vis-network.min.css";

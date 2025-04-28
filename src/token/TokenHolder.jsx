@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import Graph from "react-graph-vis";
 import "./network.css";
+import backendUrl from "../utils/common";
 
 export default function TokenHolder() {
   const { mint } = useParams();
@@ -12,7 +13,7 @@ export default function TokenHolder() {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    fetch(`${backendUrl}/api/sol /top-holders?mint=${mint}`)
+    fetch(`${backendUrl}/api/sol/top-holders?mint=${mint}`)
       .then(res => res.json())
       .then(data => {
         console.log('Fetched holders:', data.data);

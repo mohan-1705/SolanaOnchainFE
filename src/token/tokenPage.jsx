@@ -23,8 +23,9 @@ import { Toaster, toast } from "sonner";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 import { GlobalContext } from "../context/GlobalContext";
 import solana from "/cid/solana.png";
-
+import backendUrl from "../utils/common";
 const snapGrid = [50, 25];
+
 
 export function TokenPage() {
   const [search, setSearch] = useState("");
