@@ -6,6 +6,7 @@ import { Tooltip } from "@nextui-org/react";
 import { GlobalContext } from "../context/GlobalContext";
 import getImageByExchange from "../utils/ImageIconMap";
 import { toast } from "sonner";
+import backendUrl from "../utils/common";
 
 export default function ElkNode({ data, id }: NodeProps<ElkNodeData>) {
   const {
@@ -45,12 +46,7 @@ export default function ElkNode({ data, id }: NodeProps<ElkNodeData>) {
       toggleOutgoingTransactions(id);
     } else {
       try {
-        // const response = await fetch(
-        //   `http://localhost:8000/api/${selectedChain.toLowerCase()}/address/${
-        //     data.label.split(":")[0]
-        //   }/outgoing`
-        // );
-        const response = await fetch(`https://onchainanalysis.vercel.app/api/${selectedChain.toLowerCase()}/address/${data.label.split(':')[0]}/outgoing`);
+        const response = await fetch(`{backendUrl}/api/${selectedChain.toLowerCase()}/address/${data.label.split(':')[0]}/outgoing`);
         const result = await response.json();
         updateOutgoingTransactions(id, result.transactions);
       } catch (error) {
