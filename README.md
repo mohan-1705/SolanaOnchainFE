@@ -1,6 +1,6 @@
 # Solana On-Chain Investigation Tool
 
-This tool provides real-time interactive visualization and analysis of Solana wallet transactions.
+This tool provides real-time interactive visualization and deep analysis of Solana blockchain activity, focusing on wallet transactions, token flows, and holder/trader interactions. It leverages data from Helius, Moralis, and Solana RPCs to offer comprehensive insights.
 
 **Live Application:** [https://solana-onchain-fe.vercel.app/](https://solana-onchain-fe.vercel.app/)
 
@@ -15,7 +15,7 @@ This tool provides real-time interactive visualization and analysis of Solana wa
   <img width="400" alt="App Preview 6" src="/public/six.png">
   <br/>
   <video width="800" controls>
-    <source src="/public/demo.mp4" type="video/mp4">
+    <source src="/public/spectra.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -48,21 +48,28 @@ node .\start-servers.cjs
 
 ## Features Provided by Spectra 
 
-1. Graphical Representation.
-   An interactive representation of all transactions for every wallet ID, in real time, for real wallet IDs.
-   Developed using  `react-vis-network-graph`
-2. Flagging Malicious Wallet IDs.
-   On flagging, this service will register the wallet ID to a webhook that will notify the investigators of any activity on that account, via an Email.
-3. Support for Ethereum and Bitcoin.
-4. Downloading all transactions in the form of a CSV file.
-   This feature opens doors for various others in the form of data analytics and machine learning for predictive study.
-5. Chatbot features.
-   The bot permits scouting transactions and wallets by just conversing with it!
-   Can speak in Kannada, Hindi, Telugu and various other languages.
-6. Token Traders Bubble Map UI.
-   Visualizes the activity and relationships of token traders using an interactive bubble map, making it easy to identify key players and trading clusters.
-7. Token Holder Bubble Map UI.
-   Provides a graphical bubble map representation of token holders, allowing users to quickly assess distribution and concentration of tokens among holders.
+1.  **Deep Transaction Visualization & Analysis:**
+    *   Interactive graphical representation of transactions for any Solana wallet.
+    *   Track token flow in and out of wallets.
+    *   Explore transaction history up to 5 levels deep (stream).
+    *   View individual wallet balances.
+    *   Developed using `react-vis-network-graph`.
+2.  **Token Holder Bubble Map:**
+    *   Visualizes the distribution and concentration of specific tokens among holders.
+    *   Quickly identify major holders.
+3.  **Token Trader Bubble Map:**
+    *   Maps the activity and relationships of token traders.
+    *   Identify key players, trading clusters, and interactions between traders and holders.
+4.  **Malicious Wallet Flagging:**
+    *   Flag suspicious wallets to register them for activity monitoring.
+    *   Receive email notifications via webhook for any subsequent activity.
+5.  **Multi-Chain Support (Planned/Partial):**
+    *   Initial framework includes considerations for Ethereum and Bitcoin analysis (Functionality may vary).
+6.  **Data Export:**
+    *   Download transaction data as a CSV file for offline analysis, data analytics, or machine learning tasks.
+7.  **Conversational AI Chatbot:**
+    *   Scout transactions and wallets through natural language conversation.
+    *   Supports multiple languages including Kannada, Hindi, Telugu.
 
 ---
 
@@ -70,6 +77,7 @@ node .\start-servers.cjs
 1. React.js with Vite
 2. Node.js
 3. Aceternity UI
+4. Data Sources: Helius APIs, Moralis APIs, Solana RPC
 
 ## Upcoming Features. 
 1. API caching using Redis.
