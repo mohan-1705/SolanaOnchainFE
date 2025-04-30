@@ -128,9 +128,9 @@ const GraphOverlay = ({
   const githubRepos = [
     {
       name: "Frontend",
-      url: "https://github.com/Larry8668/Cryptocurrency-Investigation-CID",
+      url: " https://github.com/pramaths/SolanaOnchainFE.git",
     },
-    { name: "Backend", url: "https://github.com/pramaths/onchainanalysis" },
+    { name: "Backend", url: " https://github.com/pramaths/solana-onchainanalysis.git" },
   ];
 
   const homies = [
