@@ -10,7 +10,7 @@ const port = 5000;
 
 const client = redis.createClient({
   socket: {
-    host: "localhost",
+    host: "https://onchainanalysis.udaykiranreddy.online/",
     port: 6379,
   },
 });
@@ -54,5 +54,5 @@ app.post("/cache", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at http://https://onchainanalysis.udaykiranreddy.online/:${port}`);
 });

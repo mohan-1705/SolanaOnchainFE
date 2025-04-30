@@ -94,8 +94,7 @@ export function ElkPage() {
 
     if (walletSearchType === "stream") {
       const eventSource = new EventSource(
-        // `http://localhost:8000/api/${selectedChain.toLowerCase()}/stream/transactions/${centralNodeAddress}`
-        `https://onchainanalysis.vercel.app/api/${selectedChain.toLowerCase()}/stream/transactions/${centralNodeAddress}`
+        `https://onchainanalysis.udaykiranreddy.online/api/${selectedChain.toLowerCase()}/stream/transactions/${centralNodeAddress}`
       );
 
       console.log("Event source ->", eventSource);
@@ -141,12 +140,11 @@ export function ElkPage() {
             centralNodeAddress,
             "..."
           );
-          // const url = `http://localhost:8000/api/${selectedChain.toLowerCase()}/address/${centralNodeAddress}`;
           let url;
           if (searchType === "Transaction") {
-            url = `http://localhost:8000/api/${selectedChain.toLowerCase()}/txhash/${centralNodeAddress}`;
+            url = `https://onchainanalysis.udaykiranreddy.online/api/${selectedChain.toLowerCase()}/txhash/${centralNodeAddress}`;
           } else {
-            url = `http://localhost:8000/api/${selectedChain.toLowerCase()}/address/${centralNodeAddress}`;
+            url = `https://onchainanalysis.udaykiranreddy.online/api/${selectedChain.toLowerCase()}/address/${centralNodeAddress}`;
           }
           console.log("URL ->", url);
           const response = await fetch(url);

@@ -75,20 +75,20 @@ node .\start-servers.cjs
 ## Endpoints
 ### wallet address
 ``` 
-https://onchainanalysis.vercel.app/api/${chain}/address/${address}
+https://onchainanalysis.udaykiranreddy.online//api/${chain}/address/${address}
 ```
 ``` 
-https://onchainanalysis.vercel.app/api/${chain}/txhash/${txhash}
+https://onchainanalysis.udaykiranreddy.online//api/${chain}/txhash/${txhash}
 ```
 ``` 
-https://onchainanalysis.vercel.app/api/${chain}
+https://onchainanalysis.udaykiranreddy.online//api/${chain}
 ```
 ``` 
-https://onchainanalysis.vercel.app/api/${chain}
+https://onchainanalysis.udaykiranreddy.online//api/${chain}
 ```
 ``` 
-https://onchainanalysis.vercel.app/api/${chain}
+https://onchainanalysis.udaykiranreddy.online//api/${chain}
 ```
 ``` 
-https://onchainanalysis.vercel.app/api/${chain}
+https://onchainanalysis.udaykiranreddy.online//api/${chain}
 ```
