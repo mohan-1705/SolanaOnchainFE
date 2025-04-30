@@ -18,6 +18,8 @@ This tool provides real-time interactive visualization and deep analysis of Sola
     <source src="/public/spectra.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <br/>
+  <strong>Demo Video:</strong> <a href="https://drive.google.com/file/d/1uldH9ug0lGjoH2rPJAzrv87ez-Fv7oIG/view?usp=sharing" target="_blank">Watch Full Demo</a>
 </div>
 
 ---
