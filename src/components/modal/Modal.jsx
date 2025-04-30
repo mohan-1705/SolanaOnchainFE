@@ -53,9 +53,10 @@ const Modal = ({ props }) => {
 
   const walletDetails = async () => {
     if (data?.id) {
+      const Url = `${backendUrl}/api/crypto/${walletAddress}/${selectedChain}`
+
       try {
-        const response = await fetch(
-          `${process.env.VITE_BACKEND_URL}/api/crypto/${walletAddress}/${selectedChain}`
+        const response = await fetch(Url
         );
         const details = await response.json();
         console.log(details);

@@ -1,6 +1,18 @@
+# Solana On-Chain Investigation Tool
+
+This tool provides real-time interactive visualization and analysis of Solana wallet transactions.
+
+**Live Application:** [https://solana-onchain-fe.vercel.app/](https://solana-onchain-fe.vercel.app/)
+
+## Application Preview
 
 <div align="center">
-  <img width="800" alt="Something was supposed to be here 🤔" src="https://github.com/Larry8668/Crypto-Investigation/assets/114809719/6eda3bbc-798d-410f-b7be-490bc6f3f51a">
+  <img width="400" alt="App Preview 1" src="/public/one.png">
+  <img width="400" alt="App Preview 2" src="/public/two.png">
+  <img width="400" alt="App Preview 3" src="/public/three.png">
+  <img width="400" alt="App Preview 4" src="/public/four.png">
+  <img width="400" alt="App Preview 5" src="/public/five.png">
+  <img width="400" alt="App Preview 6" src="/public/six.png">
 </div>
 
 ---
@@ -46,20 +58,6 @@ node .\start-servers.cjs
    Visualizes the activity and relationships of token traders using an interactive bubble map, making it easy to identify key players and trading clusters.
 7. Token Holder Bubble Map UI.
    Provides a graphical bubble map representation of token holders, allowing users to quickly assess distribution and concentration of tokens among holders.
-
-<div align="center">
-  <img width="500" alt="Something was supposed to be here as well 🤨" src="https://github.com/Larry8668/Crypto-Investigation/assets/114809719/c992874e-9ebd-4062-bfdb-5388ab524fad">
-</div>
-
----
-
-<div align="center">
-  <img width="500" alt="Something was supposed to be here as well 🤨" src="https://github.com/Larry8668/Cryptocurrency-Investigation-CID/assets/114809719/06245e3b-4829-4ae6-b833-3c1c1fc0f508">
-</div>
-<div align="center">
-  <img width="250" alt="Something was supposed to be here as well 🤨" src="https://github.com/Larry8668/Cryptocurrency-Investigation-CID/assets/114809719/cfd1c43a-0b13-4969-afe1-1c13db39d4ac">
-  <img width="250" alt="Something was supposed to be here as well 🤨" src="https://github.com/Larry8668/Cryptocurrency-Investigation-CID/assets/114809719/628620b4-714d-41b5-8170-4dd567d2c322">
-</div>
 
 ---
 
