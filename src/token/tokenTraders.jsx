@@ -16,6 +16,8 @@ const TokenTraders = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [stabilizing, setStabilizing] = useState(false);
 
+  console.log("backendUrl", backendUrl);
+
   useEffect(() => {
     const fetchGraphData = async () => {
       try {
