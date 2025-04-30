@@ -13,6 +13,11 @@ This tool provides real-time interactive visualization and analysis of Solana wa
   <img width="400" alt="App Preview 4" src="/public/four.png">
   <img width="400" alt="App Preview 5" src="/public/five.png">
   <img width="400" alt="App Preview 6" src="/public/six.png">
+  <br/>
+  <video width="800" controls>
+    <source src="/public/demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
 
 ---
@@ -41,7 +46,7 @@ node .\start-servers.cjs
 
 ---
 
-## Features Provided by Spectra 🎊
+## Features Provided by Spectra 
 
 1. Graphical Representation.
    An interactive representation of all transactions for every wallet ID, in real time, for real wallet IDs.
@@ -61,12 +66,12 @@ node .\start-servers.cjs
 
 ---
 
-## Other Technologies Used ⚡️
+## Other Technologies Used 
 1. React.js with Vite
 2. Node.js
 3. Aceternity UI
 
-## Upcoming Features. 🔮
+## Upcoming Features. 
 1. API caching using Redis.
 2. LLM support for beginners.
 
