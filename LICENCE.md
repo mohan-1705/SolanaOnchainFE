@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024 Leharaditya
+Copyright (c) 2024 Mohan1705
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
